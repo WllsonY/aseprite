@@ -1,8 +1,8 @@
 name: build
-on:                # ← on: 顶格写
-  push:            # ← 加两个空格
-  pull_request:    # ← 加两个空格
-  workflow_dispatch: # ← 加两个空格，和上面两行对齐
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 jobs:         
   build:
     runs-on: ${{ matrix.os }}
